@@ -16,7 +16,7 @@ public class RolConfiguration : IEntityTypeConfiguration<Rol>
         builder.Property(p => p.Nombre)
         .HasColumnName("rolName")
         .HasColumnType("varchar")
-        .HasMaxLength(50)
+        .HasMaxLength(255)
         .IsRequired();
 
     }
